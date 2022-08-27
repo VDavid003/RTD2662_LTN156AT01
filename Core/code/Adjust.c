@@ -569,9 +569,9 @@ void CAdjustSetSharpnessTable(bit scaling, BYTE code *pArray0, BYTE  code *pArra
 //--------------------------------------------------
 void CAdjustSetBrightness(void)
 {
-    CScalerSetByte(_CB_ACCESS_PORT_64, 0x80);
-    CScalerWrite(_CB_DATA_PORT_65, 3, pData, _NON_AUTOINC);
-    CScalerSetByte(_CB_ACCESS_PORT_64, 0x00);
+    //CScalerSetByte(_CB_ACCESS_PORT_64, 0x80);
+    //CScalerWrite(_CB_DATA_PORT_65, 3, pData, _NON_AUTOINC);
+    //CScalerSetByte(_CB_ACCESS_PORT_64, 0x00);
 }
 
 //--------------------------------------------------
@@ -581,9 +581,9 @@ void CAdjustSetBrightness(void)
 //--------------------------------------------------
 void CAdjustSetContrast(void)
 {
-    CScalerSetByte(_CB_ACCESS_PORT_64, 0x83);
-    CScalerWrite(_CB_DATA_PORT_65, 3, pData, _NON_AUTOINC);
-    CScalerSetByte(_CB_ACCESS_PORT_64, 0x00);
+    //CScalerSetByte(_CB_ACCESS_PORT_64, 0x83);
+    //CScalerWrite(_CB_DATA_PORT_65, 3, pData, _NON_AUTOINC);
+    //CScalerSetByte(_CB_ACCESS_PORT_64, 0x00);
 }
 
 //--------------------------------------------------
