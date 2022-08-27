@@ -151,7 +151,7 @@ void IntProcUart(void) interrupt 4
 
 void IntProcDdcc0(void)  interrupt 0
 {
-    BYTE tempbuf;
+  //  BYTE tempbuf;
 
 	EA=0;
 
