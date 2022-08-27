@@ -13,7 +13,12 @@
 //--------------------------------------------------
 enum PresetModeDef
 {
-	    _MODE_640x350_70HZ = 0,         	// Mode 00: 640x350_70Hz, 720x350_70Hz
+    	_MODE_1366x768_60HZ = 0,           	// Mode 68:
+    	_MODE_1366x768_75HZ,           	// Mode 69:
+    	_MODE_1366x768_80HZ,           	// Mode 69:
+    	_MODE_1366x768_90HZ,           	// Mode 69:
+    	_MODE_1366x768_100HZ,           	// Mode 69:
+	    _MODE_640x350_70HZ,         	// Mode 00: 640x350_70Hz, 720x350_70Hz
 	   // _MODE_640x350_85HZ,             	// Mode 01: 640x350_85Hz
 	    _MODE_640x400_56HZ,					// Mode 02: 640x400_56Hz
 	    _MODE_640x400_70HZ,					// Mode 03: 640x400_70Hz, 720x400_70Hz
@@ -114,6 +119,46 @@ ModeTableType code tINPUTMODE_PRESET_TABLE[_MAX_PRESET_MODE] =
     //--------------------------------------------------
     // Preset Modes
     //--------------------------------------------------
+    {   // Mode 68 : 1366 x 768 x 60 Hz
+        0 | _SYNC_HN_VN | _SYNC_HP_VN | _SYNC_HN_VP | _SYNC_HP_VP,          // Polarity Flags,
+        1366, 768,                                                          // InputWidth, InputHeight,
+        478, 600,                                                           // HFreq in kHz, VFreq in Hz,
+        _HFREQ_TOLERANCE, _VFREQ_TOLERANCE,                                 // HFreqTolerance in kHz, VFreqTolerance in Hz,
+        1782, 798,                                                          // HTotal, VTotal,
+        344, 27,                                                            // HStartPos, VStartPos,
+    },
+    {   // Mode 69 : 1366 x 768 x 75 Hz
+        0 | _SYNC_HN_VN | _SYNC_HP_VN | _SYNC_HN_VP | _SYNC_HP_VP,          // Polarity Flags,
+        1366, 768,                                                          // InputWidth, InputHeight,
+        603, 750,                                                           // HFreq in kHz, VFreq in Hz,
+        _HFREQ_TOLERANCE, _VFREQ_TOLERANCE,                                 // HFreqTolerance in kHz, VFreqTolerance in Hz,
+        1814, 805,                                                          // HTotal, VTotal,
+        368, 34,                                                            // HStartPos, VStartPos,
+    },
+    {   // Mode 69 : 1366 x 768 x 80 Hz
+        0 | _SYNC_HN_VN | _SYNC_HP_VN | _SYNC_HN_VP | _SYNC_HP_VP,          // Polarity Flags,
+        1366, 768,                                                          // InputWidth, InputHeight,
+        644, 800,                                                           // HFreq in kHz, VFreq in Hz,
+        _HFREQ_TOLERANCE, _VFREQ_TOLERANCE,                                 // HFreqTolerance in kHz, VFreqTolerance in Hz,
+        1830, 807,                                                          // HTotal, VTotal,
+        376, 36,                                                            // HStartPos, VStartPos,
+    },
+    {   // Mode 69 : 1366 x 768 x 90 Hz
+        0 | _SYNC_HN_VN | _SYNC_HP_VN | _SYNC_HN_VP | _SYNC_HP_VP,          // Polarity Flags,
+        1366, 768,                                                          // InputWidth, InputHeight,
+        728, 900,                                                           // HFreq in kHz, VFreq in Hz,
+        _HFREQ_TOLERANCE, _VFREQ_TOLERANCE,                                 // HFreqTolerance in kHz, VFreqTolerance in Hz,
+        1830, 812,                                                          // HTotal, VTotal,
+        376, 41,                                                            // HStartPos, VStartPos,
+    },
+    {   // Mode 69 : 1366 x 768 x 100 Hz
+        0 | _SYNC_HN_VN | _SYNC_HP_VN | _SYNC_HN_VP | _SYNC_HP_VP,          // Polarity Flags,
+        1366, 768,                                                          // InputWidth, InputHeight,
+        818, 100,                                                           // HFreq in kHz, VFreq in Hz,
+        _HFREQ_TOLERANCE, _VFREQ_TOLERANCE,                                 // HFreqTolerance in kHz, VFreqTolerance in Hz,
+        1706, 818,                                                          // HTotal, VTotal,
+        250, 35,                                                            // HStartPos, VStartPos,
+    },
     {   // Mode 0 : 640 x 350 x 70 Hz
         0 | _SYNC_HP_VN,                                                    // Polarity Flags,
         640, 350,                                                           // InputWidth, InputHeight,
