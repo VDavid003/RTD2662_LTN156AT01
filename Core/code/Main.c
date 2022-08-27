@@ -85,7 +85,7 @@ void CMainSystemInitial(void)
     // Check eeprom and load eeprom settings
 	CEepromStartupCheck();
 
-    _SET_INPUT_SOURCE(_SOURCE_HDMI);
+    _SET_INPUT_SOURCE(_SOURCE_VGA);
     //SET_POWERSTATUS();
 
     // Initial scaler settings

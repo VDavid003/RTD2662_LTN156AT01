@@ -101,7 +101,7 @@ _SOURCE_YPBPR,     _SOURCE_NONE
 
 #define _INPUT_PORT_NUM                         7
 
-#define _NORMAL_SOURCE                          _SOURCE_HDMI
+#define _NORMAL_SOURCE                          _SOURCE_VGA
 
 //--------------------------------------------------
 // Definitions for GPIO Control
